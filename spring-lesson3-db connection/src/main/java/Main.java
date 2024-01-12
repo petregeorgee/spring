@@ -12,7 +12,7 @@ public class Main {
             product.setName("Fanta");
             product.setPrice(4);
 
-//            productRepository.addProduct(product);
+            productRepository.addProduct(product);
 
             System.out.println(productRepository.getProducts());
         }
