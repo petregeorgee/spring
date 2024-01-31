@@ -1,14 +1,16 @@
 package guru.springframework.spring6di.services;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingServiceImpl implements GreetingService
+@Primary
+public class GreetingServicePrimary implements GreetingService
 {
-
     @Override
     public String sayGreeting()
     {
-        return "Hello from GreetingServiceImpl.";
+        return "Hello From Primary Bean";
     }
 }
+
